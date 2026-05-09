@@ -86,7 +86,6 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100dvh;
-  height: 100vh;
   background: var(--bg);
   overflow: hidden;
   position: relative;
@@ -186,7 +185,7 @@ html, body {
   background: rgba(10,10,15,0.95);
   backdrop-filter: blur(10px);
   z-index: 10;
-  padding-bottom: env(safe-area-inset-bottom, 0);
+  padding-bottom: max(env(safe-area-inset-bottom), 8px);
 }
 
 .nav-btn {
